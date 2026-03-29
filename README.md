@@ -34,6 +34,12 @@ Your final app should:
 	- Duplicate recurring definitions for the same pet.
 	- Exact same-time collisions across tasks.
 
+## Testing PawPal+
+```bash
+python -m pytest
+```
+Confidence Level: 5 
+
 ## Getting started
 
 ### Setup
