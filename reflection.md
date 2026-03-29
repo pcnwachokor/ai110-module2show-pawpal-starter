@@ -56,13 +56,16 @@ Core actions
 **a. How you used AI**
 
 - How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
+    I used AI tools for all aspects, system design, helping me brainstorm, debugging issues, and refactoring components to fit design needs.
 - What kinds of prompts or questions were most helpful?
+    Having AI explain what current functionality does, screenshots of issues in the app help with context as well.
 
 **b. Judgment and verification**
 
 - Describe one moment where you did not accept an AI suggestion as-is.
 - How did you evaluate or verify what the AI suggested?
-
+    I had to reprompt for the Mermaid code and UML diagrams a few times to get it
+    to where I wanted.
 ---
 
 ## 4. Testing and Verification
@@ -70,12 +73,16 @@ Core actions
 **a. What you tested**
 
 - What behaviors did you test?
+    I tested task creation and retrieval, filtering by pet and completion status, sorting by duration and planning priority, recurring expansion (daily/twice_daily/weekly), conflict warnings, and daily plan generation within the available time limit. I also tested completing tasks and confirming recurring daily/weekly tasks generate the next due instance.
 - Why were these tests important?
+    These tests are important because they validate  correctness and user trust. The scheduler is only useful if it consistently picks tasks in the expected order, respects time constraints, and clearly reports conflicts instead of failing silently. Testing recurring behavior and completion flow also prevents long-term care routines from breaking over time.
 
 **b. Confidence**
 
 - How confident are you that your scheduler works correctly?
+    I am fairly confident that the scheduler works correctly for the intended scope. The core planning path, recurrence handling, filtering/sorting, and warning generation are implemented and covered by tests for expected behavior and common edge cases.
 - What edge cases would you test next if you had more time?
+    Next I would test very large task lists for performance, multiple weekly tasks across different days, and more complex scheduling overlap logic.
 
 ---
 
@@ -84,11 +91,14 @@ Core actions
 **a. What went well**
 
 - What part of this project are you most satisfied with?
+    I am pretty satisfied with the logic.
 
 **b. What you would improve**
 
 - If you had another iteration, what would you improve or redesign?
+    I'd put more time into the UI, make the experience a bit more appealing to look at for the user.
 
 **c. Key takeaway**
 
 - What is one important thing you learned about designing systems or working with AI on this project?
+    AI is an incredibly powerful planning tool. I can run my thought process or decisions choices through it, and it can give me the pros and cons of my approach, make suggestions I never thought of, and apply my designs quicker than I could maually.

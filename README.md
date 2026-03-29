@@ -34,6 +34,22 @@ Your final app should:
 	- Duplicate recurring definitions for the same pet.
 	- Exact same-time collisions across tasks.
 
+## Features
+
+- **Task Recurrence**: Expands daily/twice-daily/weekly/as-needed tasks for planning
+- **Smart Sorting**: Organizes tasks by completion status → frequency → priority → duration
+- **Time Budget**: Greedy scheduling that fits tasks within available time; tracks skipped tasks
+- **Conflict Detection**: Warns about time budget overages, duplicate tasks, and scheduled time collisions
+- **Auto-Regeneration**: Creating follow-up daily/weekly tasks when recurring tasks are completed
+- **Input Validation**: Enforces duration > 0, priority ≥ 0, and HH:MM time format
+- **Flexible Filtering**: Retrieve tasks by pet, completion status, or task ID
+- **Plan Explanation**: `explain_plan()` provides natural language reasoning for selected tasks
+- **Case-Insensitive Matching**: Pet lookups accept any capitalization (Fluffy, fluffy, FLUFFY)
+
+## Demo
+
+<a href="/PawPal_App.png" target="_blank"><img src='/PawpPal_App.png' title='PawPal App' width='' alt='PawPal App' class='center-block' /></a>.
+
 ## Testing PawPal+
 ```bash
 python -m pytest
