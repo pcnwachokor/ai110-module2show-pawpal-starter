@@ -22,11 +22,23 @@ Your final app should:
 - Display the plan clearly (and ideally explain the reasoning)
 - Include tests for the most important scheduling behaviors
 
+## Smarter Scheduling
+
+- Time-based sorting and filtering by pet and completion status.
+- Recurring task support that expands daily/twice-daily/weekly behavior at planning time.
+- Auto-regeneration of recurring tasks when completed:
+	- Daily tasks create a new task due the next day.
+	- Weekly tasks create a new task due in 7 days.
+- Lightweight conflict detection warnings (non-fatal):
+	- Not enough available time for all expanded tasks.
+	- Duplicate recurring definitions for the same pet.
+	- Exact same-time collisions across tasks.
+
 ## Getting started
 
 ### Setup
 
-```bash
+```bash 
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
